@@ -22,13 +22,22 @@ playButton.addEventListener('click' , function(){
     
     for(let i = 0; i < boxNumber; i++){
         const gridBox = document.createElement('div');
+        gridBox.addEventListener('click' , function(){
+            gridBox.classList.add('checked');
+        })
         if(difficultyOption.value == 'facile'){
             gridBox.classList.add('box-facile');
+            gridBox.innerHTML += i + 1;
         }else if (difficultyOption.value == 'medio'){
             gridBox.classList.add('box-medio');
+            gridBox.innerHTML += i + 1;
         }else{
             gridBox.classList.add('box-difficile');
+            gridBox.innerHTML += i + 1;
         }
         gridElement.appendChild(gridBox);
     }
+    
 });
+
+

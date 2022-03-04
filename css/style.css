@@ -32,10 +32,16 @@ footer{
     padding: 0 1rem;
 }
 
-.my-container{
+#my-container{
     width: 600px;
     height: 600px;
-    background-color: brown;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.checked{
+    background-color: rgb(0, 153, 255);
 }
 
 .box-facile{
@@ -45,7 +51,7 @@ footer{
     justify-content: center;
     align-items: center;
     border: 1px solid black;
-    background-color: aquamarine;
+    
 }
 .box-medio{
     height: calc(100% / 9);
@@ -54,7 +60,7 @@ footer{
     justify-content: center;
     align-items: center;
     border: 1px solid black;
-    background-color: aquamarine;
+    
 }
 
 .box-difficile{
@@ -64,5 +70,5 @@ footer{
     justify-content: center;
     align-items: center;
     border: 1px solid black;
-    background-color: aquamarine;
+    
 }
