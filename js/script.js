@@ -1,13 +1,9 @@
-
-
-
-
-
 const playButton = document.getElementById('my-play-button');
 playButton.addEventListener('click' , function(){
     let difficultyOption = document.getElementById('difficulty');
     console.log(difficultyOption.value);
     const gridElement = document.getElementById('my-container');
+    gridElement.innerHTML ='';
     let boxNumber = 0;
     if(difficultyOption.value == 'facile'){
         boxNumber = 100;
